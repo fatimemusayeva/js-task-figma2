@@ -65,11 +65,11 @@ let isSorted = false;
 const sortIcon = document.querySelector(".icon-1");
 
 sortIcon.addEventListener("mouseover", function() {
-    sortIcon.src = isSorted ? "/pictureJs/Group91.svg" : "/pictureJs/Group73.svg";
+    sortIcon.src = isSorted ? "./pictureJs/Group91.svg" : "./pictureJs/Group73.svg";
 });
 
 sortIcon.addEventListener("mouseout", function() {
-    sortIcon.src = isSorted ? "/pictureJs/Group90.svg" : "/pictureJs/Group74.svg";
+    sortIcon.src = isSorted ? "./pictureJs/Group90.svg" : "./pictureJs/Group74.svg";
 });
 
 let isAscending = true; 
@@ -89,7 +89,7 @@ sortIcon.addEventListener("click" , ()=>{
     isAscending = !isAscending;
     renderTasks(); 
     isSorted = !isSorted;
-    sortIcon.src = isSorted ? "/pictureJs/Group90.svg" : "/pictureJs/Group74.svg";
+    sortIcon.src = isSorted ? "./pictureJs/Group90.svg" : "./pictureJs/Group74.svg";
 })
 
 renderTasks();
